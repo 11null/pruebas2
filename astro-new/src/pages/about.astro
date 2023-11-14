@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro"
+const motd = 'Welcome to my page'
+console.log("About page",motd)
+---
+
+<Layout title="About">
+    <main>
+        <p>Site generated at: {new Date()}</p>
+        <h4>{motd}</h4>
+        <Card
+            title=""
+            href="#"
+            body=""
+            />
+        <Card
+            title="Go"
+            href="/"
+            body=""
+        />
+        {[1,2,3].map(t=>
+            <Card
+              title={"Menu Item"+t}
+              body={"Details for 'Menu Item "+t+"'"}
+              href="#"
+        />)}
+    </main>
+    
+</Layout>
