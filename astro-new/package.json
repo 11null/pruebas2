@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node runserver.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview --port 3210",
     "astro": "astro"
@@ -14,6 +14,7 @@
     "@astrojs/node": "^6.0.3",
     "@astrojs/preact": "^3.0.1",
     "astro": "^3.5.3",
+    "express": "^4.18.2",
     "preact": "^10.19.2",
     "typescript": "^5.2.2"
   }
