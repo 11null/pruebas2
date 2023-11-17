@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import {PlayArea} from '../../components/PlayArea';
+import { Counter } from '../../components/Counter';
+console.log("Index site!")
+---
+
+<Layout title="React on Astro">
+	<main style="background-color: aliceblue; padding: 1em;">
+        <h4>Hello</h4>
+        <p>oksokdfokf</p>
+        <Card
+            href='/'
+            title='back'
+            body='go back to home'
+        />
+        <PlayArea client:load/>
+        
+        <Card
+            href='#'
+            title='omg'
+            body='ok'
+        />
+        <Counter/>
+        <Card
+            href='#'
+            title='end omg'
+            body='ok'
+        />
+    </main>
+</Layout>

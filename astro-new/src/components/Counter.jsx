@@ -1,7 +1,7 @@
 import {useState} from 'preact/hooks'
 
 export function Counter() {
-    const [counter,setCounter] = useState(999)
+    const [counter,setCounter] = useState(Date.now())
 
     return (
         <>
