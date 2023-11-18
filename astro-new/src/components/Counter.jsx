@@ -1,12 +1,15 @@
 import {useState} from 'preact/hooks'
 
 export function Counter() {
-    const [counter,setCounter] = useState(Date.now())
+    const [counter,setCounter] = useState(0)
 
+    const getSum =() =>{
+        setCounter(()=>counter+1)
+    }
     return (
         <>
         <span>{counter}</span>
-        <button onClick={(()=>setCounter(()=>counter+1))}>Add</button>
+        <button onClick={getSum}>Add</button>
         </>
     )
 }
